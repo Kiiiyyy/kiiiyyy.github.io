@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section#content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('../content/wp5219556.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#content img.orang{
+    border-radius: 50%;
+    border: 5px solid rgba(234, 234, 234, .8);
+    filter: drop-shadow(4px 4px 4px rgba(241, 241, 241, 0.2));
+    animation: fotoNongol 1s ;
+    margin-bottom: 20px ;
+}
+
+section#content h1 {
+    font-size: 4em;
+    color: #eaeaea;
+    filter: drop-shadow(4px 4px 4px rgba(252, 252, 252, 0.2));
+    margin-bottom: 20px;
+}
+
+section#content div.scrolldwn a img.icon {
+    width: 100px;
+    animation: updown 3s infinite ;
+    filter: drop-shadow(0px 0px 6px rgba(252, 252, 252, .5));
+}
+
+section#content h1 span{
+    color: rgb(39, 39, 192);
+}
+
+.border-right {
+    border-right: 10px solid white;
+}
+/* Aboutme */
+section#aboutMe {
+    height: 100vh;
+    background-color: rgb(0, 0, 68);
+    color: #eaeaea;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    padding: 30px 50px;
+}
+
+section#aboutMe h1 {
+    justify-self: self-start;
+    font-size: 2em;
+    text-align: center;
+}
+
+section#aboutMe .biodata {
+    display: flex;
+    font-size: 1.2em;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+section#aboutMe .biodata img.orang2 {
+    border-radius: 30px;
+    box-shadow: 25px -25px 0 rgb(39, 39, 192);
+}
+
+section#aboutMe .biodata ol {
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+}
+
+section#aboutMe .biodata ol li {
+    list-style-type: none;
+    font-size: 1.15em;
+}
+
+section#aboutMe .biodata ol li:nth-child(5) {
+    margin-top: 5px;
+}
+
+
+/* animasi */
+
+@keyframes fotoNongol {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes updown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-25px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+    /* 100% {
+        transform: translateY(0);
+    } */
+}

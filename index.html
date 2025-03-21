@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio sob sobi sob sob</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/beranda.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <h1><span>Porto</span>folio</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="pendidikan.html">Pendidikan</a></li>
+            <li><a href="jadwal.html">Jadwal</a></li>
+            <li><a href="aktivitas.html">Aktivitas</a></li>
+            <li><a href="project.html">Project</a></li>
+          </ul>
+        </nav>
+    </header>
+    <section id="content">
+            <img src="content/Dzaky It.jpg" alt="" width="250px" class="orang">
+            <h1 id="type"></h1>
+            <div class="scrolldwn">
+                <a href="#aboutMe">
+                    <img src="content/arrow2-removebg-preview.png" alt="" class="icon">
+                </a>
+            </div>
+    </section>
+    <section id="aboutMe">
+        <h1>Tentang saya</h1>
+        <div class="biodata">
+            <img src="content/jakjak.jpg" width="400px" class="orang2">
+                <ol>
+                    <li>Nama : Muhammad Dzaky Ramadhani</li>
+                    <li>Status : Mahasiswa</li>
+                    <li>Universitas : Politeknik Gajah Tunggal</li>
+                    <li>Hobi : Nongton film atau ngoding</li>
+                    <li><p class="deskripsi">Hai! Nama saya Muhammad Dzaky Ramadhani, mahasiswa tahun pertama jurusan Teknologi Informasi di Politeknik Gajah Tunggal. Saat ini, saya sedang menjalani masa yang penuh tantangan dengan banyaknya tugas dan proyek yang harus diselesaikan, tapi itu justru membuat saya semakin berkembang dalam mengasah keterampilan dan manajemen waktu.</p></li>
+                    <li>
+                        <div class="contact">
+                            <a href="https://wa.me/6288213503918"><img src="content/Gambar_WhatsApp_2024-10-16_pukul_03.58.47_e948c09f-removebg-preview.png" width="50px"></a>
+                            <a href="https://www.instagram.com/dzak_kyyyy/?hl=en"><img src="content/ig-removebg-preview.png" alt="" width="50px"></a>
+                        </div>
+                    </li>
+                </ol>
+                
+        </div>
+        
+        
+
+    </section>
+    <script src="navbarscript.js"></script>
+    <script>
+        var i = 0;
+        var j = 0
+        var txt
+        var txt2 = 'nama saya Dzaky'
+        
+        var speed = 200 /* The speed/duration of the effect in milliseconds */
+
+        window.onload=function typeWriter() {
+          if (i < txt.length) {
+            document.getElementById("type").innerHTML += '<span>' + txt.charAt(i) + '</span>';
+            document.getElementById("type").classList.add('border-right')
+            i++;
+            setTimeout(typeWriter, speed);
+          } else if (j < txt2.length){
+            document.getElementById("type").innerHTML += txt2.charAt(j);
+            document.getElementById("type").classList.add('border-right')
+            j++;
+            setTimeout(typeWriter, speed);
+          } else {
+            document.getElementById("type").classList.remove('border-right')
+          }
+        }
+    </script>
+</body>
+</html>

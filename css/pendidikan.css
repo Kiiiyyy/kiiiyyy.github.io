@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.pendidikan {
+    min-height: 100vh;
+    background-color: rgb(0, 0, 68);
+    padding-top: 100px;
+    color: #eaeaee;
+    padding-bottom: 100px;
+}
+
+.pendidikan h1 {
+    color: #eaeaee;
+    font-size: 2em;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.pendidikan .divisi-wrap {
+    width: 70vw;
+    margin: auto;
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 25px;
+}
+
+.pendidikan .divisi-wrap .div-content {
+    display: flex;
+    min-height: 175px;
+    justify-content: space-between;
+}
+
+.border-top{
+    border-top: 3px rgba(255, 255, 255, .2) solid;
+}
+
+.border-bottom {
+    border-bottom: 3px rgba(255, 255, 255, .2) solid;
+}
+
+
+
+.div-content .icon {
+    min-width: 200px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-content .icon .bg {
+    width: 125px;
+    height: 125px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.div-content .icon .bg img {
+    transform: translate(-2px, -5px);
+}
+
+.pendidikan .divisi-wrap .desk {
+    display: flex;
+    flex-direction: column;
+}
+
+.divisi-wrap .desk a {
+    color: #eaeaee;
+    text-decoration: none;
+    align-self: flex-end;
+    margin: 15px 20px;
+}
+
+.divisi-wrap .desk h2 {
+    margin-top: -15px;
+    margin-bottom: 5px;
+}
+
+.divisi-wrap .desk p {
+    margin-right: 120px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+
+.divisi-content:hover {
+    background-color: rgba(255, 255, 255, .5);
+    cursor: pointer;
+} 
